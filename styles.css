@@ -1,0 +1,49 @@
+body{
+    background:rgb(234, 224, 235);
+    animation-name:show
+}
+
+.board{
+    display:grid;
+    width:450px;
+    height:420px;
+    background: rgb(246, 239, 246);
+    margin-top:200px;
+    margin-left:600px;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:5px;
+    animation-name:show;
+    animation-duration:1s;
+
+   
+    
+}
+@keyframes show{
+    0%{
+        opacity:0%;
+    }
+    23%{
+        opacity:25%;
+    }
+    50%{
+        opacity:50%;
+    }
+    75%{
+        opacity:75%;
+    }
+    100%{
+        opacity:100%;
+    }
+}
+
+.box{
+    
+    width:140px;
+    height:130px;
+    background:rgb(235, 171, 255);
+    box-shadow: 5px 10px 10px #cd96e7;
+
+}
+.box:hover{
+    transform:scale(1.04,1.04)
+}
