@@ -21,13 +21,12 @@ boxes.forEach(box=>box.addEventListener("mouseleave", function(){
      box.style.backgroundColor = "orange"
 }))
 
-const Players = function(name,mark){
-  this.name = name
-  this.mark = mark
+const players = function(name,mark){
+  return{name,mark}
 }
 
-const player1 = new Players("player X","x")
-const player2 = new Players("player O","O")
+const player1 =  players("player X","x")
+const player2 = players("player O","O")
 console.log(player1.name)
 firstPlayer = {
     name:"player X",
@@ -78,7 +77,7 @@ function turnManager(e){
     
     if(array.length%2===0){
            e.target.textContent = player2.mark
-           div.textContent = `${player1.name}'s person's turn`
+           div.textContent = `${player1.name}'s turn`
             num1 = e.target.dataset.box
             array = arrayRemove(array , num1)
             gameBoard.splice(num1,1,player2.mark)
@@ -87,7 +86,7 @@ function turnManager(e){
       
     }
     else if(array.length%2!==0){
-        div.textContent = `${player2.name}'s person's turn`
+        div.textContent = `${player2.name}'s  turn`
             e.target.textContent = player1.mark
             num2 = e.target.dataset.box
             array = arrayRemove(array , num2)
