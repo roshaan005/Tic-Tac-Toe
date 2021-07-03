@@ -87,7 +87,7 @@ function turnManager(e){
       
     }
     else if(array.length%2!==0){
-        div.textContent = `${player1.name}'s person's turn`
+        div.textContent = `${player2.name}'s person's turn`
             e.target.textContent = player1.mark
             num2 = e.target.dataset.box
             array = arrayRemove(array , num2)
