@@ -2,24 +2,43 @@
 <html>
     <head>
         <link rel="stylesheet" href="styles.css">
-      
+      <title>Tic-Tac-Toe</title>
 
     </head>
        
     <body>
-        <div class = "board">
-         <div class="box" id="box"></div>
-         <div class="box" id="box"></div>
-         <div class="box" id="box"></div>
-         <div class="box" id="box"></div>
-         <div class="box" id="box"></div>
-         <div class="box" id="box"></div>
-         <div class="box" id="box"></div>
-         <div class="box" id="box"></div>
-         <div class="box" id="box"></div>
+    
+        
+
+        <div  id = "main" class = "main">
+            <div id = "text"><div id = text1></div></div>
+            <section class = "board">
+            <div class="box" data-box= "0" id="box"></div>
+            <div class="box" data-box= "1" id="box"></div>
+            <div class="box" data-box= "2" id="box"></div>
+            <div class="box"data-box= "3" id="box"></div>
+            <div class="box"data-box= "4" id="box"></div>
+            <div class="box"data-box= "5" id="box"></div>
+            <div class="box" data-box= "6" id="box"></div>
+            <div class="box" data-box= "7" id="box"></div>
+            <div class="box"  data-box= "8"id="box"></div>
+            </section>
+            <div id = "restart"><div id = "txt">restart</div></div>
         </div>
+        <div class = "disappear" id = "playAgain">
+            <div class = "pop" id = "popUp">
+                <div id = "display">Game Over</div><span  id = "span" class = "span"></span>
+                <div id = "btn"><img src = "images/replay.png" ></div>
+            </div>
+        </div>
+        
+
+    </div>
+       
+  
 
     </body>
+    <script src = "script.js"></script>
 
     
 
